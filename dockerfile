@@ -15,6 +15,9 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install -r requirements.txt
+RUN pip install pandas==1.3.3
+RUN pip install --upgrade ibm-watson-machine-learning
+
 
 EXPOSE 8501
 
